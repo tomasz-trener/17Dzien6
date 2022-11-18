@@ -22,11 +22,26 @@ namespace P07AplikacjaZawodnicy.Domain
         {
             get
             {
-                return  Nazwisko + " " + Imie.Substring(0,1) + ".";
+                return Nazwisko + " " + Imie.Substring(0, 1) + ".";
             }
         }
 
-        public string DataSformatowana => DataUrodzenia.ToString("yyyy-MM-dd");
+        //public string DataSformatowana
+        //{
+        //    get
+        //    {
+        //        if (DataUrodzenia != null)
+        //            return ((DateTime)DataUrodzenia).ToString("yyyy-MM-dd");
+        //        return null;
+        //    }
+        //}
+
+
+        // znak zapytania przed wywolaniem metody dziala tak, 
+        // ze metoda ta zostanie wywolana tylko wtedy gdy argument przed znakiem
+        // zapytania jest rozny od null a gdy arguemnt jest rowny null
+        // to zostanie zwrocowna domyslna wartosć dla danego typu 
+        public string DataSformatowana => DataUrodzenia?.ToString("yyyy-MM-dd");
 
         public string Wiersz =>
                     $"{Id_zawodnika};{Id_trenera};{Imie};{Nazwisko};{Kraj};" +
@@ -34,6 +49,6 @@ namespace P07AplikacjaZawodnicy.Domain
 
         public string DaneRaportowe =>
             $"{Imie} {Nazwisko} {Kraj} {DataSformatowana}";
-        
+
     }
 }

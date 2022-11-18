@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace P07AplikacjaZawodnicy
 {
-    public partial class Form1 : Form
+    public partial class FrmStartowy : Form
     {
-        public Form1()
+        public FrmStartowy()
         {
             InitializeComponent();
         }
@@ -23,10 +23,12 @@ namespace P07AplikacjaZawodnicy
         {
             ZawodnicyRepository zr = new ZawodnicyRepository();
             lbDane.DataSource = zr.PodajZawodnikow();
-            lbDane.DisplayMember = "ImieNazwisko";
-            
+            lbDane.DisplayMember = "DaneRaportowe";                        
+        }
 
-                            
+        private void btnSzczegoly_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

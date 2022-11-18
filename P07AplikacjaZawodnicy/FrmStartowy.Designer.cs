@@ -1,6 +1,6 @@
 ﻿namespace P07AplikacjaZawodnicy
 {
-    partial class Form1
+    partial class FrmStartowy
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.lbDane = new System.Windows.Forms.ListBox();
             this.btnWczytaj = new System.Windows.Forms.Button();
+            this.btnSzczegoly = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbDane
@@ -50,15 +51,26 @@
             this.btnWczytaj.UseVisualStyleBackColor = true;
             this.btnWczytaj.Click += new System.EventHandler(this.btnWczytaj_Click);
             // 
-            // Form1
+            // btnSzczegoly
+            // 
+            this.btnSzczegoly.Location = new System.Drawing.Point(228, 12);
+            this.btnSzczegoly.Name = "btnSzczegoly";
+            this.btnSzczegoly.Size = new System.Drawing.Size(128, 23);
+            this.btnSzczegoly.TabIndex = 2;
+            this.btnSzczegoly.Text = "Pokaż szczegóły";
+            this.btnSzczegoly.UseVisualStyleBackColor = true;
+            this.btnSzczegoly.Click += new System.EventHandler(this.btnSzczegoly_Click);
+            // 
+            // FrmStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 366);
+            this.ClientSize = new System.Drawing.Size(375, 366);
+            this.Controls.Add(this.btnSzczegoly);
             this.Controls.Add(this.btnWczytaj);
             this.Controls.Add(this.lbDane);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmStartowy";
+            this.Text = "Zawodnicy";
             this.ResumeLayout(false);
 
         }
@@ -67,6 +79,7 @@
 
         private System.Windows.Forms.ListBox lbDane;
         private System.Windows.Forms.Button btnWczytaj;
+        private System.Windows.Forms.Button btnSzczegoly;
     }
 }
 
