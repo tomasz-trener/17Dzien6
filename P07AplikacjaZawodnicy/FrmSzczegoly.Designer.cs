@@ -34,7 +34,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtWzrost = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDaraUr = new System.Windows.Forms.TextBox();
+            this.txtDataUr = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtKrajZawodnika = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtWzrost);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtDaraUr);
+            this.groupBox1.Controls.Add(this.txtDataUr);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtKrajZawodnika);
             this.groupBox1.Controls.Add(this.label4);
@@ -107,12 +107,12 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Data urodzenia";
             // 
-            // txtDaraUr
+            // txtDataUr
             // 
-            this.txtDaraUr.Location = new System.Drawing.Point(6, 168);
-            this.txtDaraUr.Name = "txtDaraUr";
-            this.txtDaraUr.Size = new System.Drawing.Size(193, 20);
-            this.txtDaraUr.TabIndex = 6;
+            this.txtDataUr.Location = new System.Drawing.Point(6, 168);
+            this.txtDataUr.Name = "txtDataUr";
+            this.txtDataUr.Size = new System.Drawing.Size(193, 20);
+            this.txtDataUr.TabIndex = 6;
             // 
             // label5
             // 
@@ -196,7 +196,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtWzrost;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDaraUr;
+        private System.Windows.Forms.TextBox txtDataUr;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtKrajZawodnika;
         private System.Windows.Forms.Label label4;

@@ -55,12 +55,16 @@ namespace P07AplikacjaZawodnicy.Repositories
                             imie = '{0}',
                             nazwisko = '{1}',
                             kraj = '{2}',
-                            data_ur = '{3}',
+                            data_ur = {3},
                             waga = {4},
                             wzrost = {5} where id_zawodnika = {6}";
 
             string sql = string.Format(update, z.Imie, z.Nazwisko, z.Kraj,
-                    z.DataUrodzenia?.ToString("yyyyMMdd"), z.Waga.ToString(), z.Wzrost.ToString());
+                    
+                    z.DataUrodzenia == null ? "null" : $"'{z.DataUrodzenia?.ToString("yyyyMMdd")}'" , 
+                    
+                    z.Waga.ToString(), z.Wzrost.ToString(),
+                    z.Id_zawodnika);
 
             PolaczenieZBaza pzb = new PolaczenieZBaza();
             pzb.WyslijPolecenieSQL(sql);
