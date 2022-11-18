@@ -1,4 +1,5 @@
 ﻿using P06BibliotekaPolaczenieZBaza;
+using P07AplikacjaZawodnicy.Domain;
 using P07AplikacjaZawodnicy.Repositories;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace P07AplikacjaZawodnicy
 {
     public partial class FrmStartowy : Form
     {
+        public FrmSzczegoly frmSzczegoly { get; set; }
         public FrmStartowy()
         {
             InitializeComponent();
@@ -28,7 +30,19 @@ namespace P07AplikacjaZawodnicy
 
         private void btnSzczegoly_Click(object sender, EventArgs e)
         {
+            Zawodnik zaznaczony =
+                (Zawodnik)lbDane.SelectedItem;
 
+            if (frmSzczegoly==null)
+            {
+                frmSzczegoly = new FrmSzczegoly(zaznaczony, this);
+                frmSzczegoly.Show();
+            }
+            else
+                frmSzczegoly.UzupelnijFormularz(zaznaczony);
+            
+
+            
         }
     }
 }

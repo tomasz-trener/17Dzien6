@@ -175,11 +175,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(243, 345);
+            this.ClientSize = new System.Drawing.Size(237, 345);
             this.Controls.Add(this.btnZapisz);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmSzczegoly";
             this.Text = "Szczegoly";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSzczegoly_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
