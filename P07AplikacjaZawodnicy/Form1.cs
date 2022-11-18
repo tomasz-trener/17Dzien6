@@ -1,4 +1,5 @@
 ﻿using P06BibliotekaPolaczenieZBaza;
+using P07AplikacjaZawodnicy.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,14 +21,10 @@ namespace P07AplikacjaZawodnicy
 
         private void btnWczytaj_Click(object sender, EventArgs e)
         {
-           
-
-
-            lbDane.Items.Clear();
-
-            foreach (var w in wynik)
-                lbDane.Items.Add(w[0] + " " + w[1]);
-
+            ZawodnicyRepository zr = new ZawodnicyRepository();
+            lbDane.DataSource = zr.PodajZawodnikow();
+            lbDane.DisplayMember = "ImieNazwisko";
+            
 
                             
         }
