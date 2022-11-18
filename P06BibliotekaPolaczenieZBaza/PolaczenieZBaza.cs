@@ -9,7 +9,18 @@ namespace P06BibliotekaPolaczenieZBaza
 {
     public class PolaczenieZBaza
     {
-        const string connectionString = "Data Source=.;Initial Catalog=A_Zawodnicy;User ID=sa;Password=alx";
+        string connectionString = "Data Source=.;Initial Catalog=A_Zawodnicy;User ID=sa;Password=alx";
+
+        public string ConnectionString => connectionString; 
+
+        public PolaczenieZBaza()
+        {
+
+        }
+        public PolaczenieZBaza(string connectionString)
+        {
+            this.connectionString = connectionString;
+        }
 
         public object[][] WyslijPolecenieSQL(string sql)
         {

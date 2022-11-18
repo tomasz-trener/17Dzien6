@@ -20,7 +20,21 @@ namespace P05AplikacjaOkienkowa
 
         private void btnWyslij_Click(object sender, EventArgs e)
         {
-            PolaczenieZBaza pzb = new PolaczenieZBaza();
+            PolaczenieZBaza pzb;
+            if (string.IsNullOrWhiteSpace(txtConnectionString.Text))
+            {
+                var d= MessageBox.Show("Nie podano parametrów polaczenia z bazą. Czy chcesz użyć parametrów domyślnych?", "Pytanie",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (d == DialogResult.Yes)
+                    pzb = new PolaczenieZBaza();
+                else
+                    return;
+            }else
+                pzb = new PolaczenieZBaza(txtConnectionString.Text);
+
+          //  string connString = pzb.ConnectionString;
+          //  pzb.ConnectionString = "x";
+
             object[][] wynik= pzb.WyslijPolecenieSQL(txtSQL.Text);
 
             dgvDane.Rows.Clear();
@@ -28,6 +42,11 @@ namespace P05AplikacjaOkienkowa
 
             foreach (var wiersz in wynik)
                 dgvDane.Rows.Add(wiersz);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
