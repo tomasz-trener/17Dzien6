@@ -51,9 +51,19 @@ namespace P07AplikacjaZawodnicy.Repositories
 
         public void Edytuj(Zawodnik z)
         {
+            string update = @"update zawodnicy set 
+                            imie = '{0}',
+                            nazwisko = '{1}',
+                            kraj = '{2}',
+                            data_ur = '{3}',
+                            waga = {4},
+                            wzrost = {5} where id_zawodnika = {6}";
 
+            string sql = string.Format(update, z.Imie, z.Nazwisko, z.Kraj,
+                    z.DataUrodzenia?.ToString("yyyyMMdd"), z.Waga.ToString(), z.Wzrost.ToString());
 
-
+            PolaczenieZBaza pzb = new PolaczenieZBaza();
+            pzb.WyslijPolecenieSQL(sql);
         }
     }
 }
