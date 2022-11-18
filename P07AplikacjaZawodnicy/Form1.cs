@@ -20,9 +20,8 @@ namespace P07AplikacjaZawodnicy
 
         private void btnWczytaj_Click(object sender, EventArgs e)
         {
-            PolaczenieZBaza pzb = new PolaczenieZBaza();
+           
 
-            object[][] wynik= pzb.WyslijPolecenieSQL("select id_zawodnika, imie,nazwisko from zawodnicy");
 
             lbDane.Items.Clear();
 
