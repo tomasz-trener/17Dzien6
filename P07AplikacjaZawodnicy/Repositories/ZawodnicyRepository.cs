@@ -69,5 +69,7 @@ namespace P07AplikacjaZawodnicy.Repositories
             PolaczenieZBaza pzb = new PolaczenieZBaza();
             pzb.WyslijPolecenieSQL(sql);
         }
+
+
     }
 }

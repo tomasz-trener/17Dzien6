@@ -27,7 +27,16 @@ namespace P03TypObject
             int h = 1;
             string i = Convert.ToString(h);
 
-           // string j = (string)h;
+            // string j = (string)h;
+
+            string[] napisy = { "ala", "ma ", "kota" };
+            int[] liczby = { 2, 5, 6, 4 };
+
+            object[] obiekty = { "ala", 3, true };
+
+            string s1 = (string)obiekty[0];
+            int s2 = (int)obiekty[1];
+            bool s3 = (bool)obiekty[2];
         }
     }
 }
