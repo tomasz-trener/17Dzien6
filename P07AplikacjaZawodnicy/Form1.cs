@@ -22,7 +22,7 @@ namespace P07AplikacjaZawodnicy
         {
             PolaczenieZBaza pzb = new PolaczenieZBaza();
 
-            object[][] wynik= pzb.WyslijPolecenieSQL("select imie,nazwisko from zawodnicy");
+            object[][] wynik= pzb.WyslijPolecenieSQL("select id_zawodnika, imie,nazwisko from zawodnicy");
 
             lbDane.Items.Clear();
 
