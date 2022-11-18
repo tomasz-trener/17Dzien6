@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03TypObject", "P03TypObjec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04SlowoVar", "P04SlowoVar\P04SlowoVar.csproj", "{75EA2AB1-B6BA-406C-A891-0C5CD532588E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05AplikacjaOkienkowa", "P05AplikacjaOkienkowa\P05AplikacjaOkienkowa.csproj", "{AE05AAA5-34A7-4FF9-A48F-494E9255D0E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06BibliotekaPolaczenieZBaza", "P06BibliotekaPolaczenieZBaza\P06BibliotekaPolaczenieZBaza.csproj", "{FC726086-2BC0-4BE8-B869-EF50752FB955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{75EA2AB1-B6BA-406C-A891-0C5CD532588E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75EA2AB1-B6BA-406C-A891-0C5CD532588E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75EA2AB1-B6BA-406C-A891-0C5CD532588E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE05AAA5-34A7-4FF9-A48F-494E9255D0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE05AAA5-34A7-4FF9-A48F-494E9255D0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE05AAA5-34A7-4FF9-A48F-494E9255D0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE05AAA5-34A7-4FF9-A48F-494E9255D0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC726086-2BC0-4BE8-B869-EF50752FB955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC726086-2BC0-4BE8-B869-EF50752FB955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC726086-2BC0-4BE8-B869-EF50752FB955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC726086-2BC0-4BE8-B869-EF50752FB955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
