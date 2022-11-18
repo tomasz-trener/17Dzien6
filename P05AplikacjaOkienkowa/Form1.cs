@@ -32,6 +32,14 @@ namespace P05AplikacjaOkienkowa
             }else
                 pzb = new PolaczenieZBaza(txtConnectionString.Text);
 
+            if (string.IsNullOrEmpty(txtSQL.Text))
+            {
+                MessageBox.Show("Nie podano polecenia SQL", "Ostrzeżenie",
+                    MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+
           //  string connString = pzb.ConnectionString;
           //  pzb.ConnectionString = "x";
 
