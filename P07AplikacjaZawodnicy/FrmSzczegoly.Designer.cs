@@ -170,6 +170,7 @@
             this.btnZapisz.TabIndex = 8;
             this.btnZapisz.Text = "Zapisz";
             this.btnZapisz.UseVisualStyleBackColor = true;
+            this.btnZapisz.Click += new System.EventHandler(this.btnZapisz_Click);
             // 
             // FrmSzczegoly
             // 

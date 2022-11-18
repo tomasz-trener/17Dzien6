@@ -48,5 +48,12 @@ namespace P07AplikacjaZawodnicy.Repositories
             }
             return zawodnicy;
         }
+
+        public void Edytuj(Zawodnik z)
+        {
+
+
+
+        }
     }
 }
